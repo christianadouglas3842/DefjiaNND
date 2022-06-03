@@ -1,7 +1,6 @@
 #pragma once
 #include <cheat-base/cheat/Feature.h>
 #include <cheat-base/config/Config.h>
-#include <cheat-base/events/event.hpp>
 
 #include <vector>
 #include <map>
@@ -39,7 +38,6 @@ namespace cheat
 		config::Field<size_t> m_SelectedSection;
 
 		std::vector<Feature*> m_Features;
-		std::vector<std::string> m_ModuleOrder;
 		std::map<std::string, std::map<std::string, std::vector<Feature*>>> m_FeatureMap;
 
 		inline static bool s_IsMenuShowed = false;
